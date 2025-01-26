@@ -29,31 +29,33 @@
         </div>
         <!-- Sign IN form starts here -->
         <form id="sign-in-form">
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="login-field">Login</label>
             <input
               type="email"
               id="login-field"
+              class="field"
               placeholder="use your email as login"
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="password-field">Password</label>
             <input
               type="password"
               id="password-field"
+              class="field"
               placeholder="passwords must match"
               minlength="8"
               required
             />
           </div>
-          <div class="form-checkbox-control">
+          <div class="form-checkbox-control form-control">
             <input type="checkbox" id="stay-signed-in" />
-            <label for="stay-signed-in">Stay signed in</label>
+            <label for="stay-signed-in" class="boldNone">Stay signed in</label>
           </div>
           <hr />
-          <div class="form-submit-control">
+          <div class="form-submit-control form-control">
             <input type="submit" value="Sign in" />
             <a href="/#">Forgot your password?</a>
           </div>
@@ -67,63 +69,69 @@
         </div>
         <!-- Sign UP form starts here -->
         <form id="sign-up-form">
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="name-field">Your name</label>
             <input
               type="text"
               id="name-field"
+              class="field"
               minlength="5"
               placeholder="ex.: John Doe"
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="email">Email</label>
             <input
               type="email"
               id="email"
+              class="field"
               placeholder="name@domain.zone"
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="password">Password</label>
             <input
               type="password"
               id="password"
+              class="field"
               placeholder="8 characters minimum"
               minlength="8"
               maxlength="20"
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="confirm-password">Confirm Password</label>
             <input
               type="password"
               id="confirm-password"
+              class="field"
               placeholder="passwords must match"
               minlength="8"
               maxlength="20"
               required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="phone">Phone number</label>
             <input
               type="tel"
               id="phone"
+              class="field"
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              required
             />
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control">
             <label for="avatar">Avatar</label>
             <input type="file" id="avatar" />
           </div>
-          <div class="form-group-horizontal-control">
-            <div class="form-input-control">
+          <div class="form-group-horizontal-control select-control">
+            <div class="form-input-control select-vert">
               <label for="state">State</label>
               <select id="state">
                 <option value="" disabled selected>Select your state</option>
@@ -132,7 +140,7 @@
                 <option value="SD">South Dakota</option>
               </select>
             </div>
-            <div class="form-input-control">
+            <div class="form-input-control select-vert">
               <label for="city">City</label>
               <select id="city">
                 <option value="" disabled selected>Select your city</option>
@@ -142,16 +150,16 @@
               </select>
             </div>
           </div>
-          <div class="form-input-control">
+          <div class="form-input-control form-control bottom">
             <p>Gender</p>
             <div class="form-group-vertical-control">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
-                <label for="male">Male</label>
+                <label for="male" class="boldNone">Male</label>
               </div>
               <div class="form-radio-control">
                 <input type="radio" id="female" name="gender" value="female" />
-                <label for="female">Female</label>
+                <label for="female" class="boldNone">Female</label>
               </div>
               <div class="form-radio-control">
                 <input
@@ -161,12 +169,12 @@
                   value="other"
                   checked
                 />
-                <label for="other">Other</label>
+                <label for="other" class="boldNone">Other</label>
               </div>
             </div>
           </div>
           <hr />
-          <div class="form-submit-control">
+          <div class="form-submit-control form-control">
             <input type="submit" value="Sign up" />
           </div>
         </form>
